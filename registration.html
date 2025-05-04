@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    body{
+     background-color: #000500;
+     font-family: Arial, Helvetica, sans-serif;
+     margin: 0;
+     padding: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+    }
+ 
+    .my-form{
+     background-color: grey;
+     padding: 20px;
+     border-radius: 10px;
+     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+     text-align: center;
+     width: 350px;
+    }
+ 
+    .ele{
+     margin: 15px 0;
+     text-align: left;
+     font-size: 23px;
+    }
+ 
+    button{
+     background-color: violet;
+     color: white;
+     border: none;
+     padding: 10px 10px;
+     margin-bottom: 10px;
+     border-radius: 5px;
+     cursor: pointer;
+     width: 40%;
+     font-size: 16px;
+     font-weight: bold;
+    }
+ 
+    input{
+     font-size: 23px;
+    }
+ 
+    button:hover{
+     background-color: purple;
+    }
+ 
+ </style>
+<body>
+    <div class="my-form">
+        <h1>Registration</h1>
+        <form  method="POST">
+            <div class="ele">
+                <label for="username">👤</label>
+                <input placeholder="username" name="username">
+            </div>
+            <div class="ele">
+                <label for="userid">uid</label>
+                <input placeholder="id" name="userid">
+            </div>
+            <div class="ele">
+                <label for="password">🔑</label>
+                <input type="password" placeholder="password" name="password">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
